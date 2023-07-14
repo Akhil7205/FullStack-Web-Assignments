@@ -72,7 +72,7 @@
   /* ------------------------------ */
   
   .hero {
-    background-image: url("/Assignment-3/assest/bg.png");
+    background-image: url("./assest/bg.png");
     background-size: cover;
     background-attachment: fixed;
     height: 91.5vh;
