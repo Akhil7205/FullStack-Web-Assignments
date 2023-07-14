@@ -1,0 +1,265 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    
+}
+body{
+    height: 100vh;
+    background-color: #F6F8FA;
+}
+.navbar{
+    display:flex;
+    padding: 30px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 15em;
+}
+ul,li{
+
+    display:flex;
+    justify-content: space-around;
+    text-decoration: none;
+    list-style: none;
+padding:2px 25px;
+color:white;
+font-size: large;
+
+}
+
+hr{
+    margin:2px 6em;
+}
+.container{
+    background-image: radial-gradient(rgba(17, 17, 17, 0.6),rgba(28, 29, 28, 0.6)),url("./Photos/mainBackground.png");
+    background-size:cover;
+    height: 100vh;
+    position: relative;
+    z-index: -1;
+    top:0px;
+   
+}
+.hero_text{
+    margin: 5em 10em;
+    
+}
+#hero_heading {
+    color:white;
+    font-size: 4.5em;
+    
+}
+#hero_para{
+    color:white;
+}
+
+.box1{
+    background-color: rgb(206, 183, 183);
+    padding:30px;
+    position: relative;
+    bottom: 40px;
+    margin:0px 30px;
+    border-radius: 20px;
+}
+
+
+.all div:nth-child(2){
+    top:25px;
+}
+.all div:nth-child(3){
+    top:50px;
+}
+.all div:nth-child(5){
+    top:25px;
+}
+.all div:nth-child(4){
+    top:50px;
+}
+.all div:nth-child(8){
+    top:25px;
+}
+.all div:nth-child(9){
+    top:50px;
+}
+
+
+
+
+.img_container{
+    position: relative;
+}
+.img_heading{
+    text-align: center;
+    margin:80px 0px;
+    font-size: 60px;
+}
+ /* .img_container{
+    width:350px;
+    height: 10em;
+ }   */
+.cardimg{
+    /* width: fit-content; */
+    /* height: fit-content; */
+
+    
+    width:380px;
+
+    height:400px;
+    border-radius: 25px;
+}
+
+.text_container{
+    margin:0px 20px;
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+    bottom: 60px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* box-shadow: 2px solid black; */
+}
+.btn{
+    padding:18px 35px;
+    border-radius: 25px;
+    background-color: #6663E9;
+    color:white;
+    border:none;
+    font-weight: 600;
+    font-size: 15px;
+
+}
+.all{
+    margin: 10px 150px;
+    display:flex;
+    flex-wrap: wrap;
+    gap:120px;
+    justify-content: space-evenly;
+    /* align-items: ; */
+}
+.alltext1{
+    margin-right: 5em;
+}
+.featureimg1{
+    position: absolute;
+    right: 65.1em;
+    width: 32em;
+    height: 27em;
+
+}
+.featureimg2{
+    position: absolute;
+    right: 9.6em;
+    width: 30em;
+    height: 24em
+
+}
+.box3,.box4 {
+    margin-top:10em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.img_heading2{
+  
+    font-size: 60px;
+}
+.btn2{
+    padding:10px 30px;
+    border-radius: 25px;
+    background-color: #6663E9;
+    color:white;
+    border:none;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+
+.img_para{
+    margin:30px 0px;
+}
+.all_text2{
+margin:70px;
+}
+
+
+.subbox{
+background-color: #6663E9;
+padding: 50px;
+    text-align: center;
+    margin:50px;
+    border-radius: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    color:white;
+}
+
+.subbox_para{
+    margin:25px 0px;
+    width: 50%;   
+}
+.Newsletter_title{
+    font-size: 60px;
+}
+#email{
+    padding:10px 20px;
+    padding:10px 30px;
+    border-radius: 25px;
+    background-color: #8583f5;
+    color:white;
+    border:none;
+    font-weight: 600;
+    font-size: 15px;
+}
+.subscribe_btn{
+    background-color: white;
+    color:#6663E9;
+}
+
+form>div{
+    padding: 10px;
+    display: flex;
+    gap:60px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #8583f5;
+    margin-right: 20px;
+    border-radius: 50px;
+}
+
+footer,form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5.3em;
+
+}
+.footer_links{
+    display: flex;
+    gap:4em;
+    justify-content: space-between;
+}
+
+a{
+    
+    text-decoration: none;
+    color:black;
+    line-height: 2.5em;
+
+}
+.location,.Contact,.Legals{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.social_logo{
+    margin: 30px 0px;
+    
+}
+.social_logo>img{
+    padding-right: 20px;
+}

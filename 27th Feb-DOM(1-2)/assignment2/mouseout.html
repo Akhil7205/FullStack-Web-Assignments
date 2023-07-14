@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+.box{
+    border: 2.5px solid rgb(77, 59, 240);
+    margin:100px;
+    padding: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+.input{
+    width:60px;
+    height: 40px;
+    font-size: 30px;
+}
+    </style>
+
+<div class="box" id="boxid" >
+    <p id="be" style="font-size: x-large;">o) Follow Rule If You Once Enter In Box Then Do Not Go Out</p>
+    <h1 id = "b">Solve this Questions do not go out of this box</h1>
+    
+
+<div  id="aa">
+    <h1  class="no">2+5 = <input type="number" class="input"></h1>
+    <h1 class="no">6*3 = <input type="number" class="input"></h1>
+    <h1 class="no">9/83 = <input type="number" class="input"></h1>
+    <h1 class="no">7%4 = <input type="number" class="input"></h1>
+    <h1  class="no">79-5 = <input type="number" class="input"></h1>
+</div>
+
+</div>
+
+
+
+
+<script>
+
+
+boxid.addEventListener('mouseleave',fun)
+function fun(){
+    document.getElementById('be').innerText="You Did't Followed The Rule "
+}
+
+const elements = document.querySelectorAll(' #boxid');
+elements.forEach(element => {
+  element.addEventListener('mouseleave', () =>
+   {
+    // Do something when the element is clicked
+    element.style.color="red";
+    document.getElementById("b").innerText="TEST IS OVER"
+
+  });
+});
+    
+</script>
+
+</body>
+</html>

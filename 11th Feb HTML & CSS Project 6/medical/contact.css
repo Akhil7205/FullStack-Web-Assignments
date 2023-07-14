@@ -1,0 +1,86 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    border: none;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+body{
+margin:40px;
+background-color: aliceblue;
+
+}
+
+.head_container {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.link {
+    text-decoration: none;
+    color:black;
+    padding:10px;
+    font-size:1.2em;
+    font-weight: 550;
+}
+.link:hover{
+
+    color:rgb(20, 235, 92);
+}
+a:nth-child(3){
+    color:rgb(20, 235, 92);
+}
+
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: 10px;
+    min-width: 260px;
+
+}
+.box{
+    /* border:2px solid black; */
+    width: fit-content;
+    margin: 20px;
+    background-color: aliceblue;
+    border-radius: 12px;
+    box-shadow: 2px 2px 11px rgb(75, 73, 73);
+    /* min-width: 250px; */
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 100vh;
+}
+h1{
+    font-size: x-large;
+    text-align: center;
+    font-weight: 800;
+    margin: 10px;
+}
+
+
+
+.btn{
+    padding:5px;
+    Margin-top:10px;
+    color:white;
+    font-size: 20px;
+    background-color: rgb(6, 163, 163);
+    font-weight: 400;
+    border-radius: 10px;
+
+
+}
+input,textarea{
+    margin-top:10px;
+    margin-bottom:10px;
+    padding: 7px;
+}

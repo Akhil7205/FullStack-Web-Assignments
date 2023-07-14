@@ -1,0 +1,104 @@
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing:border-box;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+body{
+margin:40px;
+}
+
+.container {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.link {
+    text-decoration: none;
+    color:black;
+    padding:10px;
+    font-size:1.2em;
+    font-weight: 550;
+}
+.link:hover{
+
+    color:rgb(20, 235, 92);
+}
+a:nth-child(1){
+    color:rgb(20, 235, 92);
+}
+section{
+    /* width: 50%; */
+}
+.herosection{
+    width:50%;
+    margin-top:150px;
+
+}
+h1{
+    font-size: 73px;
+    margin-bottom: .5em;
+}
+p{
+    font-size: large;
+    /* width: 85%; */
+    line-height: 1.3em;
+}
+.btn{
+    padding:15px 35px;
+    color:white;
+    background-color: aqua;
+    border-radius: 20px;
+    border: none;
+    font-weight: 700;
+    font-size: x-large;
+    margin-top: 1em;
+    font-weight: 600;
+    cursor: pointer;
+}
+.mouse{
+    position: relative;
+    float:right;
+    scale: 1.2;
+    top:2.6em;
+    left:6em;
+}
+.bottom-right{
+    float:right; 
+
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+    /* height: 100vh; */
+    /* width: 100vw; */
+}
+.green-box{
+    position:absolute;
+    /* bottom:20em; */
+    /* height: 100%; */
+    /* width: 100%; */
+    z-index:-2;
+    width: 27.2%;
+    top: 14.6em;
+}
+.yellow-box{
+    width: 23%;
+    z-index: -1;
+    position: absolute;
+    top: 17.4em;
+    right: 1em;
+}
+    /* height: 100%; */
+
+
+ .right-section{
+    justify-content: flex-end;
+    display: flex;
+    }
+
+.dr{
+    height: 100%;
+    width: 70%;
+}

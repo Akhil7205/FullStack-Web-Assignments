@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: burlywood;
+    padding: 20px;
+    margin:20px;
+    cursor: pointer;
+
+}
+span{
+    color:red;
+}
+
+
+@keyframes move {
+    righttoleft{
+        
+    }
+    
+}
+
+
+
+
+@keyframes myAnimation {
+  0% {
+    transform: translateX(100vw);
+  }
+  25% {
+    transform: translateY(50vw);
+  }
+  50% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Applying the animation to an element */
+.animate {
+  animation: myAnimation 5s linear ;
+}
+
+    </style>
+
+
+
+
+<div class="box" id="boxx">
+    <h1>Double click <span>On Me</span> to start an animation</h1>
+</div>
+
+
+<script>
+    let b=document.querySelector('#boxx')
+     b.addEventListener('dblclick',()=>{
+ b.classList.add('animate');
+
+    });
+
+
+
+    
+</script>
+
+</body>
+</html>

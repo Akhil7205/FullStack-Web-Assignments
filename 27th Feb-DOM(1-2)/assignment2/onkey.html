@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: black;
+        }
+        #center{
+            display: grid;
+            place-content: center;
+            /* place-items: center; */
+            /* padding: 50px; */
+            border: 3px solid pink;
+            width: 500px;
+            height: 500px;
+            color: white;
+            text-align: center;
+
+        }
+        .abc{
+            display: grid;
+            place-content: center;
+            /* place-items: center; */
+            /* padding: 50px; */
+            /* border: 3px solid pink; */
+            /* width: 500px; */
+            height: 800px;
+
+        }
+        span{
+            color: red;
+        }
+    </style>
+    <div class="abc">
+
+        <h2 id="center"><span>Press Any Key</span> And It Will Show Exactly What Did You  Press</h2>
+    </div>
+
+    <script>
+      let center=document.getElementById('center')
+        document.addEventListener('keypress',(event)=>{
+            let keys=event.key;
+            center.innerText=`You Press The Key That Is  = ${keys}`
+            center.style.color="red";
+            event.keys.style.color="white";
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: rgb(12, 12, 12);
+        }
+.box{
+    width:500px;
+    height: 500px;
+    border: 2px solid blueviolet;
+    background-color: darkgrey;
+    margin:50px;
+    text-align: center;
+    margin: 100px auto;
+}
+h1{
+    margin: 100px auto;
+    width:120px;
+    background-color: aqua;
+    height: 120px;
+    display: grid;
+    place-content: center;
+    font-size: xxx-large;
+}
+
+h2{
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+    font-size: xx-large;
+}
+
+    </style>
+    <h2>Press KeyUp Or KeyDown To Tigger An Event</h2>
+    <div class="box" >
+        <h1 id="keyup">🌦️ </h1>
+        <h1 class="keydown"> 🌦️</h1>
+    </div>
+    <script>
+        
+    
+
+        let a = document.getElementById('keyup');
+    
+        document.addEventListener('keyup', (event) => {
+            if (event.key === 'ArrowUp' ) {
+                a.innerText = "☔";
+                a.style.background = "red";
+                a.style.color = "white";
+            }
+        });
+        
+        
+
+        
+        document.addEventListener('keydown',(e)=>{
+                if(e.key==="ArrowDown"){
+                 a.innerText="🌂";
+                a.style.background="red";
+            }
+        });
+
+        
+        let b = document.querySelector('.keydown');
+      document.addEventListener('keyup', (eventf) => {
+            if (eventf.key === 'ArrowUp' ) {
+                b.innerText = "🌂";
+                b.style.background = "red";
+                b.style.color = "white";
+            }
+        });
+
+
+        document.addEventListener('keydown',(ef)=>{
+                if(ef.key ==="ArrowDown"){ 
+                b.innerText="☔";
+                b.style.background="red";
+                alert('sd')
+            }
+        })
+
+
+    </script>
+</body>
+</html> 
+

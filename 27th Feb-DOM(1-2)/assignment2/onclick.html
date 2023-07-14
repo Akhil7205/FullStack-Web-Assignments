@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #e3ece9;
+}
+.box{
+    text-align: center;
+    padding:50px;
+    margin:100px;
+}
+.box-contain{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+.box_color{
+    width:150px;
+    height:100px;
+    padding:20px;
+    border: 2px solid black;
+    cursor: pointer;
+    /* background-color: azure; */
+    text-align: center;
+    /* margin: 0 auto; */
+}
+
+.box1{
+    background-color: azure;
+}
+.box2{
+    background-color:cadetblue;
+}
+.box3{
+    background-color:blanchedalmond;
+}
+.box4{
+    background-color:chartreuse;
+}
+
+
+    </style>
+    
+<div class="container">
+    <div class="box">
+        <h1 style="color: red;">click On Any Box To Find Out What Is The Color Name <hr></h1>
+    </div>
+    <div class="box-contain">
+        <div class="box1 box_color">
+            <h2>Click On Me </h2>
+        </div>
+        <div class="box2 box_color">
+            <h2>Click On Me </h2>
+        </div>
+        <div class="box3 box_color">
+            <h2>Click On Me </h2>
+        </div>
+        <div class="box4 box_color" >
+            <h2>Click On Me </h2>
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+
+let a=document.querySelector('.box1');
+a.addEventListener('click',()=>{
+    alert('This Color Is Azure')
+})
+
+let b=document.querySelector('.box2');
+b.addEventListener('click',()=>{
+    alert('This Color Is Cadetblue')
+})
+
+let c =document.querySelector('.box3');
+c.addEventListener('click',()=>{
+    alert('This Color Is Blanchedalmond')
+})
+
+let d=document.querySelector('.box4');
+d.addEventListener('click',()=>{
+    alert('This Color Is Chartreuse')
+})
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <h1>Counter App</h1>
+        <button id="d">Decrement by 1</button>
+        <input id="text" placeholdr="0" style="color:white">
+        <button id="i">Increment by 1</button>
+        <div>
+            <button id="Reset">Reset Value</button>
+        </div>
+    </div>
+  
+    
+    <!-- <script src="script.js"></script> -->
+    
+    <script>
+
+let resetelement=document.querySelector('#Reset');
+let textelement=document.getElementById('text');
+let decrementelement=document.querySelector('#d');
+let incrementelement=document.querySelector('#i');
+
+
+let text=0;
+
+function updatetext(){
+    textelement.value=text;
+}
+incrementelement.addEventListener('click',()=>{
+        text++ 
+    updatetext();
+    // console.log(text)
+})
+
+decrementelement.addEventListener('click',()=>{
+   for(let i=0; i<1; i++){
+       text--
+   }
+    updatetext();
+})
+
+
+
+// for reset button click
+resetelement.addEventListener("click", () => {
+    text =0;
+    updatetext();
+});
+
+updatetext();
+  
+
+
+
+// // const counterElement = document.getElementById('counter');
+// // const incrementButton = document.getElementById('incrementBtn');
+// // const decrementButton = document.getElementById('decrementBtn');
+
+// let resetelement=document.querySelector('#Reset');
+// let textelement=document.getElementById('text');
+// let decrementButton=document.querySelector('#d');
+// let incrementButton=document.querySelector('#i');
+
+
+// // Initial counter value
+// let counter = 0;
+
+// // Function to update the counter element
+// updateCounter=()=> {
+// counterElement.textContent = counter;
+// };
+
+// // Event listener for increment button
+// incrementButton.addEventListener('click', () => {
+// counter++;
+// updateCounter();
+// });
+
+// // Event listener for decrement button
+// decrementButton.addEventListener('click', () => {
+// counter--;
+// updateCounter();
+// });
+
+// // Update the counter element initially
+// updateCounter();
+
+    </script>
+</body>
+</html>
